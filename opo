@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harold Pogi</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .search-box {
+      background-color: white;
+      padding: 40px;
+      width: 400px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    #searchInput {
+      width: 250px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: 2px solid #333;
+    }
+    #searchBtn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      background-color: #0000ff;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="search-box">
+    <form>
+      <input type="text" id="searchInput" placeholder="SEARCH">
+      <button type="button" id="searchBtn">GO</button>
+    </form>
+  </div>
+
+  <script>
+    function search() {
+      const query = document.getElementById("searchInput").value;
+      alert("You search for: " + query);
+    }
+
+    document.getElementById("searchBtn").addEventListener("click", search);
+  </script>
+
+</body>
+</html>
